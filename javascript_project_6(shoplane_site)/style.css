@@ -1,0 +1,209 @@
+/* conmmon css */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+      /* font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+}
+html{
+    font-size: 16px;
+    
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
+}
+/* --------------------------------
+style for menu bar or navigation bar
+----------------------------------*/
+header{
+    position: sticky;
+    top:0px;
+    background-color:#fff;
+    height: 100px;
+    width: 100%;
+}
+#menu_bar{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+/* for  left menu */
+#logo{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 1.5px;
+    
+     
+}
+#logo span{
+    font-weight: bolder;
+}
+
+#left_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo ~ a{
+    margin-left:30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    /* font-weight:bold; */
+}
+/* style for search bar */
+#search_bar{
+    display: flex;
+    align-items: center;
+    /* border:1px solid black; */
+    width:400px;
+    height: 34px;
+   padding: 10px 24px 8px 8px;
+    background-color: #F5F2F2;;
+}
+#search{
+    border:none;
+    display: inline-block;
+    width:100%;
+    padding:8px;
+    background-color: #F5F2F2;
+}
+#search:focus{
+    outline: none;
+}
+
+/* style for right menu */
+#right_menu{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cart{
+    font-size: 20px;
+    margin-right: 30px;
+}
+#autar{
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+/* FOR CAROUSAL  */
+.clothContainer{
+    height: 200px;
+    width: 400px;
+    background-color: yellow;;
+}
+
+/* FOR CLOTHING AND ACCESSORIES SECTION  */
+.headings{
+    margin:6rem 0 2rem 8rem;
+}
+#clothing ,#accessories{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 90%;
+    margin: 0 auto ;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* z-index: -10;; */
+}
+
+ .cardWrapper{
+    /* border: 1px solid red; */
+    height: 26rem;
+    width: 12rem;
+    position : relative;
+    margin:  10px;
+    z-index: -10;
+    box-shadow: 1px 1px 6px 4px rgb(231,231,231) ;
+    border-radius: 5px;;
+} 
+.card-link{
+    text-decoration: none;
+    color:black;
+}
+.card-link:hover{
+    border-radius: 5px;;
+    box-shadow: 1px 1px 3px 0px rgb(189, 188, 188) ;
+}
+
+ .imageDiv {
+  width: 100%;
+  /* border: 2px solid green;  */
+} 
+.Images{
+  width: 100%; 
+}
+.detailDiv{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    padding: 1rem;
+}
+.detailDiv h5,p {
+    margin: 1rem 0 0;
+}
+.productPrice{
+    margin-top: 12px;
+    font-weight: 600;
+    color: #009688;
+}
+
+/* ----FOR FOOTER SECTION  */
+footer{
+    margin-top: 6rem;
+    background-color: rgb(28,27,30);
+    color: #fff;
+    border: 1px solid black; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+     text-transform: uppercase; 
+    height: 20rem;  
+   
+}
+footer > section{
+    
+    padding: 60px;
+}
+.footer-heading{
+    /* margin-top: 5rem; */
+    display: flex;
+    font-weight: bold;
+   
+    flex-direction: column;
+}
+footer .footer-link{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    display: inline-block;
+    margin:1rem 0 0 ;
+    color: #fff;
+    font-size: 0.8rem;
+    
+    /* font-weight: bold; */
+}
+.footer-content{
+    /* border: 5px solid green; */
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin: 2rem auto 0 auto;
+}
+  
+
